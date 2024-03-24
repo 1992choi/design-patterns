@@ -10,6 +10,8 @@ public interface ShipFactory {
         return ship;
     }
 
+    void sendEmailTo(String email, Ship ship);
+
     Ship createShip();
 
     private void validate(String name, String email) {
@@ -23,10 +25,6 @@ public interface ShipFactory {
 
     private void prepareFor(String name) {
         System.out.println(name + " 만들 준비 중");
-    }
-
-    private void sendEmailTo(String email, Ship ship) {
-        System.out.println(ship.getName() + " 다 만들었습니다.");
     }
 
 }
