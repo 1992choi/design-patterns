@@ -13,7 +13,7 @@ public class MultuplyFileProcessor {
 
     public int process() {
         try(BufferedReader reader = new BufferedReader(new FileReader(path))) {
-            int result = 0;
+            int result = 1;
             String line = null;
             while((line = reader.readLine()) != null) {
                 result *= Integer.parseInt(line);
